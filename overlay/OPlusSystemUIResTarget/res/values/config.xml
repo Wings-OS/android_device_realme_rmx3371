@@ -9,7 +9,7 @@
     <bool name="config_roundedCornerMultipleRadius">true</bool>
 
     <!-- The Enrollment Progress bar for UDFPS sensor in pixels -->
-    <integer name="config_udfpsEnrollProgressBar" translatable="false">75</integer>
+    <integer name="config_udfpsEnrollProgressBar" translatable="false">94</integer>
 
     <!-- Margin on the bottom of the charging indicator on Keyguard -->
     <dimen name="keyguard_indication_margin_bottom">3dp</dimen>
@@ -17,4 +17,7 @@
     <!-- Whether the combined qs shows in status bar when true, the combined qs will not be available
          if set it to false  -->
     <bool name="flag_combined_qs_headers">false</bool>
+
+    <!-- Whether to find optimal display refresh rate when using udfps -->
+    <bool name="config_udfpsOptimalRefreshRate">true</bool>
 </resources>
