@@ -35,6 +35,7 @@ on early-boot
     # Disable serial console notification
     setprop init.svc.console stopped
 
+
 on boot
     # Charger
     chown system system /proc/charger/charger_factorymode_test
@@ -84,34 +85,11 @@ on boot
     chmod 0666 /sys/kernel/oplus_display/dimlayer_bl_en
 
     chmod 0666 /dev/oplus_display
-    chmod 0666 /sys/kernel/oplus_display/dimlayer_bl_en
     chmod 0666 /sys/kernel/oplus_display/dynamic_osc_clock
     chmod 0666 /sys/kernel/oplus_display/hbm
     chmod 0666 /sys/kernel/oplus_display/notify_fppress
     chmod 0666 /sys/kernel/oplus_display/panel_serial_number
     chmod 0666 /sys/kernel/oplus_display/power_status
-    
-    chown system system /dev/oplus_display
-    chown system system /sys/kernel/oplus_display/dimlayer_bl_en
-    chown system system /sys/kernel/oplus_display/dynamic_osc_clock
-    chown system system /sys/kernel/oplus_display/hbm
-    chown system system /sys/kernel/oplus_display/notify_fppress
-    chown system system /sys/kernel/oplus_display/panel_serial_number
-    chown system system /sys/kernel/oplus_display/power_status
-    chown system system /dev/tp_misc
-    chown system system /proc/touchpanel/tp_fw_update
-    chown system system /proc/touchpanel/oplus_tp_limit_enable
-    chown system system /proc/touchpanel/oplus_tp_direction
-    chown system system /proc/touchpanel/double_tap_enable
-    chown system system /proc/touchpanel/coordinate
-    chown system system /proc/touchpanel/game_switch_enable
-    chown system system /proc/touchpanel/fp_enable
-    chown system system /proc/touchpanel/baseline_test
-    chown system system /proc/touchpanel/kernel_grip_handle
-    chown system system /proc/touchpanel/curved_size
-    chown system system /proc/touchpanel/charge_detect
-    write /proc/touchpanel/smooth_level 3
-    write /proc/touchpanel/sensitive_level 3
 
     # Sensors
     chown system system /sys/devices/platform/soc/soc:sensor_fb/adsp_notify
