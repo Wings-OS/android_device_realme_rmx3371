@@ -75,6 +75,47 @@ on post-fs-data
 
 on early-boot
     start vendor.sensors
+    mkdir /data/oplus/multimedia 0775 system system
+    mkdir /data/oplus/multimedia/ui 0775 system system
+    mkdir /data/oplus/multimedia/ringtones 0775 system system
+    mkdir /data/oplus/multimedia/notifications 0775 system system
+
+on early-boot
+    start vendor.sensors
+    # Vibration stuff
+    write /sys/class/leds/vibrator/trigger "transient"
+    chown system system /sys/class/leds/vibrator/trigger
+	# Vibration stuff
+	write /sys/class/leds/vibrator/trigger "transient"
+	chown system system /sys/class/leds/vibrator/trigger
+	chown system system /sys/class/leds/vibrator/activate
+	chown system system /sys/class/leds/vibrator/brightness
+	chown system system /sys/class/leds/vibrator/duration
+	chown system system /sys/class/leds/vibrator/state
+	chown system system /sys/class/leds/vibrator/f0
+	chown system system /sys/class/leds/vibrator/cali
+	chown system system /sys/class/leds/vibrator/vmax
+	chown system system /sys/class/leds/vibrator/index
+	chown system system /sys/class/leds/vibrator/loop
+	chown system system /sys/class/leds/vibrator/lra_resistance
+	chown system system /sys/class/leds/vibrator/ram_update
+	chown system audio /sys/class/leds/vibrator/rtp
+	chown system system /sys/class/leds/vibrator/seq
+	chown system system /sys/class/leds/vibrator/motor_old
+	chown system system /sys/class/leds/vibrator/waveform_index
+	chown system system /sys/class/leds/vibrator/osc_cali
+	chown system system /sys/class/leds/vibrator/osc_data
+	chown system system /sys/class/leds/vibrator/ram_test
+	chown system system /sys/class/leds/vibrator/f0_data
+	chown system system /sys/class/qcom-haptics/lra_calibration
+	chown system system /sys/class/qcom-haptics/lra_frequency_hz
+	chown system system /sys/class/qcom-haptics/lra_impedance
+	chown system system /sys/class/qcom-haptics/lra_cal_rc_clk_cal_count
+	chown system system /sys/class/qcom-haptics/lra_cal_cl_t_lra_us
+	chmod 0666 /sys/class/leds/vibrator/activate
+	chmod 0666 /sys/class/leds/vibrator/index
+	chmod 0660 /sys/class/leds/vibrator/rtp
+	chmod 0666 /dev/awinic_haptic
 
 on boot
     write /dev/cpuset/audio-app/cpus 1-2
@@ -115,6 +156,18 @@ service vendor.lowi /vendor/bin/sscrpcd
    user system
    group system wakelock
    capabilities BLOCK_SUSPEND
+
+on property:sys.boot_completed=1
+# Setup cpu.shares to throttle background groups (bg ~ 5% sysbg ~ 10%)
+    write /dev/cpuctl/background/cpu.shares 1024
+    write /dev/cpuctl/system-background/cpu.shares 2048
+    write /dev/cpuctl/system/cpu.shares 20480
+    # We only have system and background groups holding tasks and the groups below are empty
+    write /dev/cpuctl/camera-daemon/cpu.shares 20480
+    write /dev/cpuctl/foreground/cpu.shares 20480
+    write /dev/cpuctl/nnapi-hal/cpu.shares 20480
+    write /dev/cpuctl/rt/cpu.shares 20480
+    write /dev/cpuctl/top-app/cpu.shares 20480
 
 #pd-mapper
 service vendor.pd_mapper /vendor/bin/pd-mapper
