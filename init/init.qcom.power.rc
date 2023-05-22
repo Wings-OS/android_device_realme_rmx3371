@@ -182,7 +182,7 @@ on property:vendor.post_boot.parsed=1
 	write /sys/devices/system/cpu/cpufreq/policy7/scaling_max_freq 3187200
 
 on init
-	touch /data/bootchart/enabled
+#	touch /data/bootchart/enabled
 
     # boottime stune
     write /dev/stune/schedtune.prefer_idle 1
