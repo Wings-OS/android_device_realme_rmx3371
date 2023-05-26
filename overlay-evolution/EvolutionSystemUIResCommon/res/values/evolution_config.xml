@@ -20,7 +20,6 @@
             0 - GLOBAL HBM
             1 - LOCAL HBM
     -->
-
     <integer name="config_udfpsHbmType">0</integer>
    
     <!-- UDFPS recognizing animation vertical position offset -->
