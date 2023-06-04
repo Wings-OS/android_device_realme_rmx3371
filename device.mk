@@ -199,6 +199,7 @@ PRODUCT_PACKAGES += \
 # CameraGo V4
 PRODUCT_PACKAGES += \
     GCamGOPrebuilt-V4
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
@@ -351,7 +352,9 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
     android.hardware.power@1.2.vendor \
-    vendor.qti.hardware.perf@2.2.vendor
+    vendor.qti.hardware.perf@2.2.vendor \
+    android.hardware.power-service.oplus-libperfmgr
+
 
 # QMI
 PRODUCT_PACKAGES += \
