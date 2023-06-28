@@ -335,12 +335,12 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
-    CarrierConfigResTarget \
+    CarrierConfigResCommon \
     FrameworksResTarget \
-    OPlusFrameworksResTarget \
-    OPlusSettingsProviderResTarget \
-    OPlusSettingsResTarget \
-    OPlusSystemUIResTarget \
+    OPlusFrameworksResCommon \
+    OPlusSettingsProviderResCommon \
+    OPlusSettingsResCommon \
+    OPlusSystemUIResCommon \
     WifiResTarget
 
 # Partitions
