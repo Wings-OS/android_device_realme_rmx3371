@@ -20,6 +20,6 @@
     <bool name="flag_combined_qs_headers">false</bool>
 
     <!-- Whether to find optimal display refresh rate when using udfps -->
-    <bool name="config_udfpsOptimalRefreshRate">false</bool>
+    <bool name="config_udfpsOptimalRefreshRate">true</bool>
 
 </resources>
