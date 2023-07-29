@@ -13,5 +13,5 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="build_maintainer_summary">Abhishek Shukla</string>
-    <string name="build_maintainer_telegram">https://t.me/Abhishek699</string>
+    <string name="build_maintainer_donate_url">https://paypal.me/abhis699</string>
 </resources>
