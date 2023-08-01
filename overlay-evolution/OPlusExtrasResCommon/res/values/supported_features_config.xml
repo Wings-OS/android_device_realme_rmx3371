@@ -6,10 +6,10 @@
 <resources>
 
     <!-- Whether device supports Alert Slider -->
-    <bool name="config_deviceSupportsAlertSlider">true</bool>
+    <bool name="config_deviceSupportsAlertSlider">false</bool>
 
     <!-- Whether device supports MSM Touchboost -->
-    <bool name="config_deviceSupportsTouchboost">true</bool>
+    <bool name="config_deviceSupportsTouchboost">false</bool>
 
     <!-- Whether device supports Ambient Display Gestures -->
     <bool name="config_deviceSupportsAmbientDisplayGestures">true</bool>
@@ -18,7 +18,7 @@
     <bool name="config_deviceSupportsHBM">true</bool>
 
     <!-- Whether device supports Kcal -->
-    <bool name="config_deviceSupportsKcal">true</bool>
+    <bool name="config_deviceSupportsKcal">false</bool>
 
     <!-- Whether device supports Keep PCC -->
     <bool name="config_deviceSupportsKeepPCC">true</bool>
@@ -27,10 +27,10 @@
     <bool name="config_deviceSupportsChangingMaxBrightness">true</bool>
 
     <!-- Whether device supports Disabling fsync -->
-    <bool name="config_deviceSupportsFSyncOff">true</bool>
+    <bool name="config_deviceSupportsFSyncOff">false</bool>
 
     <!-- Whether device supports AdrenoBoost -->
-    <bool name="config_deviceSupportsAdrenoboost">true</bool>
+    <bool name="config_deviceSupportsAdrenoboost">false</bool>
 
     <!-- Whether device supports Touch Gestures -->
     <bool name="config_deviceSupportsTouchGestures">true</bool>
