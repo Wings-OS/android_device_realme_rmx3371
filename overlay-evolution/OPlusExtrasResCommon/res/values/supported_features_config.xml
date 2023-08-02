@@ -23,6 +23,9 @@
     <!-- Whether device supports Keep PCC -->
     <bool name="config_deviceSupportsKeepPCC">false</bool>
 
+    <!-- Whether device supports High Touch Polling Rate -->
+    <bool name="config_deviceSupportsHightTouchPollingRate">true</bool> 
+
     <!-- Whether device supports Changing Maximum Brightness -->
     <bool name="config_deviceSupportsChangingMaxBrightness">true</bool>
 

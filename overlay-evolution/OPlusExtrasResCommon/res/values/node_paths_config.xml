@@ -23,6 +23,9 @@
     <!-- Keep PCC sysfs node path -->
     <string name="node_keep_pcc_switch" translatable="false">/sys/kernel/oplus_display/skip_pcc_override</string>
 
+    <!-- High touch polling rate procfs node path -->
+    <string name="node_high_touch_polling_rate_switch" translatable="false">/proc/touchpanel/game_switch_enable</string>
+
     <!-- Max Brightness sysfs node path-->
     <string name="node_max_brightness_preference" translatable="false">/sys/kernel/oplus_display/max_brightness</string>
 
