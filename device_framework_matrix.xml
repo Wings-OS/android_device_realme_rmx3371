@@ -15,7 +15,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-<compatibility-matrix version="5.0" type="framework" level="6">
     <hal format="hidl" optional="true">
         <name>vendor.dolby.hardware.dms</name>
         <transport>hwbinder</transport>
