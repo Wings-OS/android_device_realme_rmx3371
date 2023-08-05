@@ -618,7 +618,7 @@
     <!-- The default intensity level for media vibrations. See
          Settings.System.MEDIA_VIBRATION_INTENSITY more details on the constant values and
          meanings. -->
-    <integer name="config_defaultMediaVibrationIntensity">3</integer>
+    <integer name="config_defaultMediaVibrationIntensity">2</integer>
     <!-- The default intensity level for notification vibrations. See
          Settings.System.NOTIFICATION_VIBRATION_INTENSITY more details on the constant values and
          meanings. -->
@@ -627,6 +627,12 @@
          Settings.System.RING_VIBRATION_INTENSITY more details on the constant values and
          meanings. -->
     <integer name="config_defaultRingVibrationIntensity">2</integer>
+
+    <!-- Default list of files pinned by the Pinner Service -->
+    <string-array translatable="false" name="config_defaultPinnerServiceFiles">
+        <item>"/system_ext/priv-app/daxService/daxService.apk"</item>
+        <item>"/system_ext/priv-app/MotoDolbyDax3/MotoDolbyDax3.apk"</item>
+    </string-array>
 
     <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
     <integer-array name="config_udfps_sensor_props" translatable="false" >
