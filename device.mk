@@ -398,6 +398,9 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor \
     vendor.qti.hardware.perf@2.2.vendor
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
+
 # Preopt SystemUI    
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Settings \
@@ -454,18 +457,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Speed profile services and wifi-service to reduce RAM and storage
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
-
-# Perf
-PRODUCT_PACKAGES += \
-    libqti-perfd-client
-
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service.oplus-libperfmgr
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json \
-    $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
 # Telephony
 PRODUCT_PACKAGES += \
