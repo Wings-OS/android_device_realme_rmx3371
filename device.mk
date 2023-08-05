@@ -558,3 +558,6 @@ PRODUCT_BOOT_JARS += \
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/realme/RMX3371/RMX3371-vendor.mk)
+
+# Oplus Camera
+$(call inherit-product, vendor/oplus/camera/oplus-camera.mk)
