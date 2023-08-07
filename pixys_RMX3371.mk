@@ -11,16 +11,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from RMX3371 device
 $(call inherit-product, device/realme/RMX3371/device.mk)
 
-# Inherit some common Evolution X stuff
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common pixys X stuff
+$(call inherit-product, vendor/pixys/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_SUPPORTS_QUICK_TAP := true
-EXTRA_UDFPS_ANIMATIONS := true
-TARGET_USES_PICO_GAPPS := true
-EVO_BUILD_TYPE := OFFICIAL
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
-PRODUCT_NAME := evolution_RMX3371
+PRODUCT_NAME := pixys_RMX3371
 PRODUCT_DEVICE := RMX3371
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
