@@ -26,7 +26,7 @@ prebuilt_etc {
 prebuilt_etc {
     name: "init.spartan.rc",
     src: "init.spartan.rc",
-    sub_dir: "init/hw",
+    sub_dir: "init",
     vendor: true,
 }
 
