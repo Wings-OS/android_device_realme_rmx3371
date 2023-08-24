@@ -117,6 +117,7 @@ persist.bluetooth.a2dp_offload.disabled=false
 persist.vendor.bluetooth.modem_nv_support=true
 persist.vendor.bt.aac_frm_ctl.enabled=true
 persist.vendor.bt.aac_vbr_frm_ctl.enabled=true
+persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac
 persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2
 persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
 persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true
@@ -147,6 +148,7 @@ vendor.display.smomo_camera_support=1
 vendor.display.smomo_game_support=0
 vendor.display.use_layer_ext=1
 vendor.display.use_smooth_motion=1
+vendor.display.disable_rotator_downscale=1
 
 # DPM
 persist.vendor.dpmhalservice.enable=1
@@ -169,6 +171,7 @@ debug.sf.high_fps_early_gl_phase_offset_ns=-2000000
 debug.sf.high_fps_early_phase_offset_ns=-4000000
 debug.sf.high_fps_late_sf_phase_offset_ns=-2000000
 debug.sf.latch_unsignaled=0
+debug.sf.predict_hwc_composition_strategy=0
 persist.sys.sf.color_saturation=1.0
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
